@@ -10,18 +10,6 @@ h1 {
     text-align: center;
     padding: 20px;
 }
-
-.checkmark {
-    width: 80px;
-    height: 80px;
-    background-color: #4a7c2e;
-    border-radius: 50%;
-    color: white;
-    font-size: 50px;
-    line-height: 80px;
-    margin: 0 auto 20px;
-}
-
 .thank-you h1 {
     color: #2d5016;
     margin-bottom: 15px;
@@ -53,3 +41,16 @@ h1 {
 .back-btn:hover {
     background-color: #2d5016;
 }
+
+
+.checkmark {
+    width: 80px;
+    height: 80px;
+    background-color: #4a7c2e;
+    border-radius: 50%;
+    color: white;
+    font-size: 50px;
+    line-height: 80px;
+    margin: 0 auto 20px;
+}
+
