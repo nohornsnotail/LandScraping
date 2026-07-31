@@ -3,54 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landscaping Request Form</title>
+    <title>Landscaping Request Form | Rochester NY</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Landscaping Request Form</h1>
-        <form action="https://formsubmit.co/landscraperoc@gmail.com" method="POST">
-            
-            <!-- FormSubmit settings -->
-            <form action="https://formsubmit.co/landscraperoc@gmail.com" method="POST">
-    
-    <input type="hidden" name="_subject" value="New Landscaping Request!">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_next" value="https://nohornsnotail.github.io/thankyou.html">
-    <input type="text" name="_honey" style="display:none">
 
-    <!-- rest of your form fields -->
-
-</form>
-
-            <div class="form-group">
-                <label for="name">Name <span class="required">*</span></label>
-                <input type="text" id="name" name="name" required>
-            </div>
-
-            <div class="form-group">
-                <label for="address">Address <span class="required">*</span></label>
-                <input type="text" id="address" name="address" required>
-            </div>
-
-            <div class="form-group">
-                <label for="zip">Zip Code <span class="required">*</span></label>
-                <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="Enter a 5-digit zip code" required>
-            </div>
-
-            <div class="form-group">
-                <label for="workload">Describe Workload <span class="required">*</span></label>
-                <textarea id="workload" name="workload" rows="5" placeholder="Describe the landscaping work you need done..." required></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="comments">Additional Comments</label>
-                <textarea id="comments" name="comments" rows="3" placeholder="Any other details..."></textarea>
-            </div>
-
-            <button type="submit">Submit Request</button>
-        </form>
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>🌿 Landscaping Request Form</h1>
+            <p>Serving Rochester, NY and surrounding areas</p>
+        </div>
     </div>
+
+    <div class="container">
+        <div class="form-wrapper">
+            <h2>Request a Quote</h2>
+            <p class="intro">Fill out the form below and we'll get back to you within 24 hours.</p>
+
+            <form action="https://formsubmit.co/landscraperoc@gmail.com" method="POST" id="landscapingForm">
+
+                <!-- FormSubmit settings -->
+                <input type="hidden" name="_subject" value="New Landscaping Request!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://yourusername.github.io/thankyou.html">
+                <input type="text" name="_honey" style="display:none">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="(585) 555-1234" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="zip">Zip Code <span class="required">*</span></label>
+                        <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="Enter a 5-digit zip code" placeholder="146XX" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address <span class="required">*</span></label>
+                    <input type="text" id="address" name="address" placeholder="123 Main St, Rochester, NY" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Type <span class="required">*</span></label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Select a service...</option>
+                        <option value="lawn-mowing"> Lawn Mowing</option>
+                        <option value="weed-removal"> Weed Removal</option>
+                        <option value="mulching"> Mulching</option>
+                        <option value="hedge-trimming"> Hedge Trimming</option>
+                        <option value="garden-design"> Garden Design</option>
+                        <option value="tree-removal"> Tree Removal</option>
+                        <option value="leaf-removal"> Leaf Removal</option>
+                        <option value="snow-removal"> Snow Removal</option>
+                        <option value="full-landscaping"> Full Landscaping Overhaul</option>
+                        <option value="other"> Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="workload">Describe Workload <span class="required">*</span></label>
+                    <textarea id="workload" name="workload" rows="5" placeholder="Tell us about the work you need done. Size of yard, current condition, any specific concerns..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Additional Comments</label>
+                    <textarea id="comments" name="comments" rows="3" placeholder="Anything else we should know? Budget, timeline, preferences..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <span>I agree to be contacted about my landscaping request</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Submit Request</span>
+                    <span class="btn-icon">→</span>
+                </button>
+
+            </form>
+        </div>
+
+        <div class="info-sidebar">
+            <div class="info-card">
+                <h3>📍 Service Area</h3>
+                <p>Rochester, NY & surrounding suburbs within 30 miles</p>
+            </div>
+            <div class="info-card">
+                <h3>⏱ Response Time</h3>
+                <p>We respond to all requests within 24 hours</p>
+            </div>
+            <div class="info-card">
+                <h3>💯 Free Estimates</h3>
+                <p>No obligation, no pressure - just honest quotes</p>
+            </div>
+            <div class="info-card">
+                <h3>📅 Current Season</h3>
+                <p>Now booking summer & fall landscaping projects!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>🌿 Landscaping Services | Rochester, NY</p>
+        <p class="footer-contact">Email: landscraperoc@gmail.com</p>
+        <p class="footer-small">© 2026 | Proudly serving the Flower City</p>
+    </footer>
+
 </body>
 </html>
