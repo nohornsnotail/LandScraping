@@ -328,43 +328,32 @@ footer p {
     }
 }
 
-/* ===== ANIMATED CHECKMARK ===== */
+/* ===== CHECKMARK ===== */
 .checkmark-circle {
     width: 80px;
     height: 80px;
-    margin: 0 auto 25px;
-}
-
-.checkmark {
-    width: 80px;
-    height: 80px;
+    background-color: #4a7c2e;
     border-radius: 50%;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scaleIn 0.5s ease-out;
 }
 
-.checkmark-circle-bg {
-    stroke: #4a7c2e;
-    stroke-width: 2;
-    fill: none;
-    animation: circleAnim 0.6s ease-out;
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
-@keyframes circleAnim {
-    from { stroke-dasharray: 166; stroke-dashoffset: 166; }
-    to { stroke-dasharray: 166; stroke-dashoffset: 0; }
-}
-
-.checkmark-check {
-    stroke: #4a7c2e;
-    stroke-width: 4;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-dasharray: 48;
-    stroke-dashoffset: 48;
-    animation: checkAnim 0.4s ease-out 0.5s forwards;
-}
-
-@keyframes checkAnim {
-    to { stroke-dashoffset: 0; }
+.checkmark-icon {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
 }
 
 .thank-you-card h1 {
